@@ -152,7 +152,7 @@ The possible states of the authentication are:
 - **Loading**: The user has triggered an asynchronous API call, and the loading state is set while waiting for the response (used for loading screens in the UI).
 - **ConfirmEmail**: The user needs to confirm their email after registration.
 - **ResetPassword**: The user is in the process of resetting their password. This state is triggered after requesting a code to be sent to their email for password reset.
-- **NotInitialized**: This state is set to null to prevent rendering until the slice checks if the user is authenticated or not. This prevents issues where a previously authenticated user could see a brief page transition (like from /sign-in to /).
+- **NotInitialized**: This state is used to prevent rendering until the slice checks if the user is authenticated or not. This prevents issues where a previously authenticated user could see a brief page transition (like from /sign-in to /).
 
 #### Reducer Logic
 The Redux reducer is solely responsible for updating the state based on the responses or errors from the API calls. The reducer ensures that the UI reacts to the different authentication states accordingly.
