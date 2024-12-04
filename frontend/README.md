@@ -8,7 +8,7 @@
 3. [Running the Application](#running-the-application)
    - [On Linux or macOS](#on-linux-or-macos)
    - [On Windows](#on-windows)
-4. [Step: Run Tests](#step-run-tests)
+4. [Run Tests](#run-tests)
 5. [Building the Application](#building-the-application)
 6. [Application Architecture](#application-architecture)
    - [State Management with Redux](#state-management-with-redux)
@@ -92,7 +92,7 @@ npm install
 npm run start
 ```
 
-## Step: Run Tests
+## Run Tests
 
 To ensure that your application is working correctly, you should run the tests. Follow the steps below to run tests in your local development environment:
 
@@ -168,5 +168,5 @@ There is two routes components;
 
 The API is exposed through an interface to allow easy mocking of the Cognito API connection. This makes it simpler to test the application in a local development environment without needing a real connection to Cognito.
 
-- **Mocking with `localStorage`**: The mock API uses `localStorage` to persist data across page refreshes, ensuring that the authentication state remains consistent during local testing.
+- **Mocking with `localStorage`**: The mock API uses `localStorage` to persist data across page refreshes, ensuring that the authentication state remains consistent during local testing. You can user a user1 with password 123 to test login or create a new account if you want it.
 - **Authentication Provider**: The API maps the Cognito authentication state to the domain state of the application. This approach provides flexibility, meaning that if the authentication provider needs to change in the future, only the mapping logic needs to be updated, leaving the rest of the application untouched.
