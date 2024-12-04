@@ -17,6 +17,8 @@
 4. [Usage](#usage)
    - [1. Compile Lambda and Apply Terraform Configurations](#1-compile-lambda-and-apply-terraform-configurations)
    - [2. Clean All Resources Created in AWS](#2-clean-all-resources-created-in-aws)
+  
+5. [Extras](#extras)
 
 
 
@@ -87,3 +89,9 @@ make apply
 ```bash
 make clean
 ```
+
+## Extras
+
+This project currently lacks the creation of an S3 bucket and the use of CloudFront to distribute the static login website. These steps are planned for future implementation.
+
+In the meantime, you'll need to manually create an S3 bucket and import the static files from the build folder.
