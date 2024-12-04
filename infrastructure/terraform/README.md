@@ -66,13 +66,13 @@ This configuration provisions the following:
 
 Manages the creation of the Cognito User Pool and associated resources.
 
-## Lambda Module (./modules/lambda)
+### Lambda Module (./modules/lambda)
 Manages the creation of the Lambda function used in the Cognito User Pool for pre-sign-up hooks.
 
 For the python lamdba code we need to zip the ./modules/lambda/lambda_function to a zip to be imported in lambda service. You can do this automaticly by using make command; 
 
 ```bash
-make apply
+make lambda-zip
 ```
 
 ## Usage
