@@ -127,7 +127,7 @@ If now .env.production exists .env will be used.
 
 This section outlines the architecture of the application, including how the front-end interacts with the API, handles authentication, and structures business logic.
 
-The Redux component manages the global application state. The reducer handles state changes based on API responses and exposes thunk methods for asynchronous UI interactions. The UI calls twunk methods and listens for state changes and updates accordingly.
+The Redux component manages the global application state. The reducer handles state changes based on API responses and exposes thunk methods for asynchronous UI interactions. The UI calls thunk methods and listens for state changes and updates accordingly.
 
 
 ### State Management with Redux
