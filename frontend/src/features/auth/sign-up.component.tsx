@@ -36,7 +36,6 @@ const SignUp: React.FC = () => {
                         <TextField 
                                 label='Username:' 
                                 onChange={(e) => setUsername(e.target.value)} 
-                                value={username} 
                                 key='username' 
                                 required={true}
                                 placeholder='Enter your username'/>
@@ -46,7 +45,6 @@ const SignUp: React.FC = () => {
                                 type='email'
                                 label='Email:' 
                                 onChange={(e) => setEmail(e.target.value)} 
-                                value={email} 
                                 key='email' 
                                 required={true}
                                 placeholder='Enter your email'/>
@@ -54,7 +52,6 @@ const SignUp: React.FC = () => {
                     <div className="mb-3 relative">
                         <SecretField 
                                 label='Password:' 
-                                value={password} 
                                 required={true} 
                                 secretVisible={passwordVisible} 
                                 key='password' 
@@ -65,7 +62,6 @@ const SignUp: React.FC = () => {
                     <div className="mb-3 relative">
                         <SecretField 
                                 label='Confirm Password:' 
-                                value={passwordConfirmation} 
                                 required={true} 
                                 secretVisible={passwordConfirmationVisible} 
                                 key='confirm-password' 

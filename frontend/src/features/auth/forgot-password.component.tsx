@@ -27,7 +27,6 @@ const ForgotPassword: React.FC = () => {
                     <TextField 
                             label='Username:' 
                             onChange={(e) => setUsername(e.target.value)} 
-                            value={username} 
                             key='username' 
                             required={true}
                             placeholder='Type your username'/>

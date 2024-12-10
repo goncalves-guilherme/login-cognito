@@ -36,16 +36,15 @@ const ResetPassword: React.FC = () => {
                     <div className="mb-4">
                         <TextField 
                             label='Username:' 
-                            value={username} 
                             key='username' 
                             required={true}
-                            disable={true}/>
+                            disable={true}
+                            value={username}/>
                     </div>
                     <div className="mb-4">
                         <TextField 
                             label='Verification Code:' 
                             onChange={(e) => setVerificationCode(e.target.value)} 
-                            value={verificationCode} 
                             key='verification-code' 
                             required={true}
                             placeholder='Verification code received by email'/>
@@ -53,7 +52,6 @@ const ResetPassword: React.FC = () => {
                     <div className="mb-6 relative">
                         <SecretField 
                                 label='New Password:' 
-                                value={newPassword} 
                                 required={true} 
                                 secretVisible={newPasswordVisible} 
                                 key='password' 

@@ -3,7 +3,6 @@ import TextField from '../text-field/text-field.component';
 
 interface SecretFieldProps {
     label: string;
-    value: string;
     secretVisible: boolean;
     onSecretChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onSecretVisibilityChange: () => void;
@@ -13,7 +12,6 @@ interface SecretFieldProps {
 
 const SecretField: React.FC<SecretFieldProps> = ({
     label,
-    value,
     secretVisible,
     onSecretChange,
     onSecretVisibilityChange,
@@ -26,7 +24,6 @@ const SecretField: React.FC<SecretFieldProps> = ({
                 type={secretVisible ? 'text' : 'password'}
                 label={label} 
                 onChange={onSecretChange} 
-                value={value} 
                 required = {required}
                 placeholder={placeholder}
             />

@@ -32,7 +32,6 @@ const SignIn: React.FC = () => {
                         <TextField 
                             label="Username:" 
                             onChange={(e) => setUsername(e.target.value)} 
-                            value={username} 
                             required
                             placeholder='Username or email address'
                         />
@@ -40,7 +39,6 @@ const SignIn: React.FC = () => {
                     <div className="relative">
                         <SecretField 
                             label="Password:" 
-                            value={password} 
                             required 
                             secretVisible={passwordVisible} 
                             onSecretChange={(e) => setPassword(e.target.value)} 

@@ -34,7 +34,6 @@ const EmailVerification: React.FC = () => {
                         <TextField 
                             label='Verification Code:' 
                             onChange={(e) => setVerificationCode(e.target.value)}
-                            value={verificationCode} 
                             key='verification-code' 
                             required={true}/>
                     </div>
