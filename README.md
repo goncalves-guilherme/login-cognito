@@ -15,6 +15,8 @@ The frontend consists of a ReactJS application styled with Tailwind CSS. It impl
 
 For more detailed instructions on setting up and running the frontend, please refer to the [Frontend README](./frontend/README.md).
 
+![Front-End Architecture](./docs/drawio/app-frontend.drawio.png)
+
 ## Infrastructure
 
 The infrastructure section contains Terraform code to provision AWS resources, including:
